@@ -41,10 +41,9 @@ window.addEventListener('load',function(){
                     locationTimezone.textContent = country;
                     iconImage.src = generateUrl(icon);
 
-                    // Set temperature from Kelvins to Celsius
-                    let fahrenheit = tempCelsius * 9/5 + 32;
+                    // Set temperature from Celsius to Fahrenheit
+                    let fahrenheit = tempCelsius * 9/5 + 32;                    
 
-                    // Change Kelvins to Celcius
                     temperatureSection.addEventListener("click", () =>{
                         if(temperatureSpan.textContent === 'C') {
                             temperatureSpan.textContent = 'F';
